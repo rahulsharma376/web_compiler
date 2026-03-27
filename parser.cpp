@@ -2,6 +2,8 @@
 #include <iostream>
 using namespace std;
 
+vector<ASTNode*> parseProgram();
+
 Parser::Parser(vector<Token> t) : tokens(t), pos(0) {}
 
 Token Parser::current() {
@@ -106,4 +108,15 @@ ASTNode* Parser::parseAssignment() {
     }
 
     return left;
+}
+
+//for Multiple statements
+vector<ASTNode*> Parser::parseProgram() {
+    vector<ASTNode*> statements;
+
+    while (pos < tokens.size()) {
+        statements.push_back(parseAssignment());
+    }
+
+    return statements;
 }

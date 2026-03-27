@@ -23,7 +23,13 @@ int Evaluator::evaluate(ASTNode* node) {
         if (node->value == "+") return left+right;
         if (node->value == "-") return left-right;
         if (node->value == "*") return left*right;
-        if (node->value == "/") return left/right;
+        if (node->value == "/") {
+            if(right == 0){
+                throw runtime_error("Division by Zero");
+            }
+            return left/right;
+        }
+        
     }
 
     if(node->type == "ASSIGN"){
@@ -34,6 +40,8 @@ int Evaluator::evaluate(ASTNode* node) {
 
         return val;
     }
+
+
 
     cout << "Invalid AST Node\n";
     exit(1);

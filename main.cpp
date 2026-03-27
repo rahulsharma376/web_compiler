@@ -18,21 +18,38 @@ void printAST(ASTNode* node, int depth = 0){
 }
 
 int main() {
-    string code = "a = 5 + 3 * 2";
+    // string code = "a = 5 + 3 * 2";
+
+    string line, code;
+    while(getline(cin, line)) {
+        code += line + " ";
+    }
 
     vector<Token> tokens = lexer(code);
 
-    Parser parser(tokens); //class Parser with constructer parser 
-    ASTNode* root = parser.parseAssignment();
+    // Parser parser(tokens); //class Parser with constructer parser 
+    // ASTNode* root = parser.parseAssignment();
 
-    printAST(root);
+    // printAST(root);
 
+
+    // Evaluator evaluator;
+
+    // int result = evaluator.evaluate(root);
+
+    // cout <<"\nResult: " << result << endl;
+
+
+    Parser parser(tokens);
+    vector<ASTNode*> program = parser.parseProgram();
 
     Evaluator evaluator;
 
-    int result = evaluator.evaluate(root);
-
-    cout <<"\nResult: " << result << endl;
+    for (auto stmt: program) {
+        printAST(stmt);
+        int result = evaluator.evaluate(stmt);
+        cout << "Result: " << result << endl;
+    }
 
     return 0;
 }

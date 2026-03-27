@@ -18,6 +18,9 @@ class Parser {
         ASTNode* term();
         ASTNode* expression();
         ASTNode* parseAssignment();
-};
+
+        vector<ASTNode*> parseProgram();
+
+    };
 
 #endif

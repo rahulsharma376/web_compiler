@@ -1,6 +1,7 @@
 #include "lexer.h"
 #include "parser.h"
 #include "ast.h"
+#include "evaluator.h"
 #include <iostream>
 
 using namespace std;
@@ -25,6 +26,13 @@ int main() {
     ASTNode* root = parser.parseAssignment();
 
     printAST(root);
+
+
+    Evaluator evaluator;
+
+    int result = evaluator.evaluate(root);
+
+    cout <<"\nResult: " << result << endl;
 
     return 0;
 }

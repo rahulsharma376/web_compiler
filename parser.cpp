@@ -104,4 +104,6 @@ ASTNode* Parser::parseAssignment() {
         
         return node;
     }
+
+    return left;
 }

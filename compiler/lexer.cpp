@@ -11,6 +11,7 @@ string tokenTypeToString(TokenType type){
         case ASSIGN: return "ASSIGN";
         case LPAREN: return "LPAREN";
         case RPAREN: return "RPAREN";
+        // case SEMICOLON: return "SEMICOLON";
         default: return "UNKNOWN";
     }
 }
@@ -27,10 +28,16 @@ vector<Token> lexer(const string& code){
             continue;
         }
 
+        // if(code[i] == ';') {
+        //     tokens.push_back({SEMICOLON, ";"});
+        //     i++;
+        //     continue;
+        // }
+
         // identifiers, first letter checking whether it is character or not because identifier cant start with number.
         if(isalpha(code[i])) {
             string value = "";
-            while (i < n && isalnum(code[i]) || code[i] == '_') {
+            while (i < n && (isalnum(code[i]) || code[i] == '_')) {
                 value += code[i];
                 i++;
             }

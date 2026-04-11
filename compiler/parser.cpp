@@ -7,15 +7,19 @@ vector<ASTNode*> parseProgram();
 Parser::Parser(vector<Token> t) : tokens(t), pos(0) {}
 
 Token Parser::current() {
+    // if (pos >= tokens.size()) {
+    //     cout << "Unexcepted end of input\n";
+    //     exit(1);
+    // }
     return tokens[pos];
 }
 
 void Parser::eat(TokenType type) {
-    if (current().type == type) pos++;
-    else {
-        cout << "Unexpected token\n";
-        exit(1);
-    }
+    if (pos < tokens.size() && current().type == type) pos++;
+    // else {
+    //     cout << "Unexpected token\n";
+    //     exit(1);
+    // }
 }
 
 ASTNode* Parser::factor() {
@@ -117,6 +121,11 @@ vector<ASTNode*> Parser::parseProgram() {
     while (pos < tokens.size()) {
         statements.push_back(parseAssignment());
     }
+
+    // skip semicolon if present
+    // if (pos < tokens.size() && current().value == ";"`) {
+    //     pos++;  
+    // }
 
     return statements;
 }

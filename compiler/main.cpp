@@ -25,6 +25,25 @@ int main() {
         code += line + " ";
     }
 
+    // string code;
+    // getline(cin, code);
+    
+    // string code(
+    //     (istreambuf_iterator<char>(cin)),
+    //     istreambuf_iterator<char>()
+    // );
+
+    //convert newline -> Space
+    for (char &c : code) {
+        if (c == '\n') c = ' ';
+    }
+
+    // converting new line to space
+
+    // for (char &c: code){
+    //     if (c == '\n' ) c = ' ';
+    // }
+
     vector<Token> tokens = lexer(code);
 
     // Parser parser(tokens); //class Parser with constructer parser 
@@ -46,9 +65,11 @@ int main() {
     Evaluator evaluator;
 
     for (auto stmt: program) {
-        printAST(stmt);
-        int result = evaluator.evaluate(stmt);
-        cout << "Result: " << result << endl;
+        // printAST(stmt);
+        // int result = evaluator.evaluate(stmt);
+        // cout << "Result: " << result << endl;
+
+        cout<< astToJson(stmt) << endl;
     }
 
     return 0;

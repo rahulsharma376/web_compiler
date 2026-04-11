@@ -30,32 +30,70 @@ It also demonstrates the ability to **bridge low-level C++ logic with a modern f
 
 ### 🔹 Input & Execution
 
-![Input Example](./compiler/Screenshot/InputSingleLine.png)
-![Input Example](./compiler/Screenshot/InputMultipleLine1.png)
-![Input Example](./compiler/Screenshot/InputMultipleLine2.png)
+<p align="center">
+  <a href="./compiler/Screenshot/InputSingleLine.png">
+    <img src="./compiler/Screenshot/InputSingleLine.png" width="250"/>
+  </a>
+  <a href="./compiler/Screenshot/InputMultipleLine1.png">
+    <img src="./compiler/Screenshot/InputMultipleLine1.png" width="250"/>
+  </a>
+  <a href="./compiler/Screenshot/InputMultipleLine2.png">
+    <img src="./compiler/Screenshot/InputMultipleLine2.png" width="250"/>
+  </a>
+</p>
 
 ---
 
 ### 🔹 AST Visualization
 
-![AST Visualization](./compiler/Screenshot/OutputSingleLine.png)
-![AST Visualization](./compiler/Screenshot/OutputMultipleLine12.png)
-![AST Visualization](./compiler/Screenshot/OutputMultipleLine24.png)
+<p align="center">
+  <a href="./compiler/Screenshot/OutputSingleLine.png">
+    <img src="./compiler/Screenshot/OutputSingleLine.png" width="250"/>
+  </a>
+  <a href="./compiler/Screenshot/OutputMultipleLine12.png">
+    <img src="./compiler/Screenshot/OutputMultipleLine12.png" width="250"/>
+  </a>
+  <a href="./compiler/Screenshot/OutputMultipleLine24.png">
+    <img src="./compiler/Screenshot/OutputMultipleLine24.png" width="250"/>
+  </a>
+</p>
 
 ---
 
 ### 🔹 Multiple Statements
 
-![Multiple Statements](./compiler/Screenshot/InputMultipleLine.png)
-![Multiple Statements](./compiler/Screenshot/InputMultipleLine1.png)
-![Multiple Statements](./compiler/Screenshot/InputMultipleLine2.png)
-![Multiple Statements](./compiler/Screenshot/OutputSingleLine.png)
-![Multiple Statements](./compiler/Screenshot/OutputMultipleLine11.png)
-![Multiple Statements](./compiler/Screenshot/OutputMultipleLine12.png)
-![Multiple Statements](./compiler/Screenshot/OutputMultipleLine21.png)
-![Multiple Statements](./compiler/Screenshot/OutputMultipleLine22.png)
-![Multiple Statements](./compiler/Screenshot/OutputMultipleLine23.png)
-![Multiple Statements](./compiler/Screenshot/OutputMultipleLine24.png)
+<p align="center">
+  <a href="./compiler/Screenshot/InputMultipleLine.png">
+    <img src="./compiler/Screenshot/InputMultipleLine.png" width="200"/>
+  </a>
+  <a href="./compiler/Screenshot/InputMultipleLine1.png">
+    <img src="./compiler/Screenshot/InputMultipleLine1.png" width="200"/>
+  </a>
+  <a href="./compiler/Screenshot/InputMultipleLine2.png">
+    <img src="./compiler/Screenshot/InputMultipleLine2.png" width="200"/>
+  </a>
+  <a href="./compiler/Screenshot/OutputSingleLine.png">
+    <img src="./compiler/Screenshot/OutputSingleLine.png" width="200"/>
+  </a>
+  <a href="./compiler/Screenshot/OutputMultipleLine11.png">
+    <img src="./compiler/Screenshot/OutputMultipleLine11.png" width="200"/>
+  </a>
+  <a href="./compiler/Screenshot/OutputMultipleLine12.png">
+    <img src="./compiler/Screenshot/OutputMultipleLine12.png" width="200"/>
+  </a>
+  <a href="./compiler/Screenshot/OutputMultipleLine21.png">
+    <img src="./compiler/Screenshot/OutputMultipleLine21.png" width="200"/>
+  </a>
+  <a href="./compiler/Screenshot/OutputMultipleLine22.png">
+    <img src="./compiler/Screenshot/OutputMultipleLine22.png" width="200"/>
+  </a>
+  <a href="./compiler/Screenshot/OutputMultipleLine23.png">
+    <img src="./compiler/Screenshot/OutputMultipleLine23.png" width="200"/>
+  </a>
+  <a href="./compiler/Screenshot/OutputMultipleLine24.png">
+    <img src="./compiler/Screenshot/OutputMultipleLine24.png" width="200"/>
+  </a>
+</p>
 
 ---
 

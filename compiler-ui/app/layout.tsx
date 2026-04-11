@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mathematical Compiler with AST",
-  description: "By Rahul Thakur Sharma",
+  title: "AST Intepreter | Rahul Sharma",
+  description: "AST-Based expression intepreter with Visualization by Rahul Sharma",
 };
 
 export default function RootLayout({

@@ -66,8 +66,9 @@ int main() {
 
     for (auto stmt: program) {
         // printAST(stmt);
-        // int result = evaluator.evaluate(stmt);
-        // cout << "Result: " << result << endl;
+
+        int result = evaluator.evaluate(stmt);    //for total output
+        cout << result << endl;     // Abstract Syntax tree
 
         cout<< astToJson(stmt) << endl;
     }

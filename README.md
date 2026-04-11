@@ -2,38 +2,8 @@
 
 A full-stack project that demonstrates core **compiler design concepts** by building a custom interpreter in C++ and visualizing its **Abstract Syntax Tree (AST)** in a modern web UI.
 
----
-
-## 📸 Demo / Screenshots
-
-### 🔹 Input & Execution
-
-![Input Example](./screenshots/input.png)
-
----
-
-### 🔹 AST Visualization
-
-![AST Visualization](./screenshots/ast.png)
-
----
-
-### 🔹 Multiple Statements
-
-![Multiple Statements](./screenshots/multi.png)
-
----
-
-## ✨ Features
-
-* 🧠 Custom **Lexer (Tokenizer)**
-* 🌳 Recursive Descent **Parser**
-* 🧩 AST (Abstract Syntax Tree) generation
-* ⚡ Expression evaluation engine
-* 🔄 Supports **multiple statements**
-* 📊 Interactive **AST visualization**
-* 🎨 Color-coded nodes for better understanding
-* 🌐 Full-stack integration using Next.js
+This project showcases a **complete end-to-end execution pipeline**—from parsing raw input to generating structured AST and evaluating results—highlighting strong fundamentals in **systems design** and **problem-solving**.
+It also demonstrates the ability to **bridge low-level C++ logic with a modern frontend**, delivering an **interactive developer tool** rather than a simple academic implementation.
 
 ---
 
@@ -53,6 +23,52 @@ A full-stack project that demonstrates core **compiler design concepts** by buil
 * TypeScript
 * CSS / Tailwind
 * SVG-based Tree Rendering
+
+---
+
+## 📸 Demo / Screenshots
+
+### 🔹 Input & Execution
+
+![Input Example](./compiler/Screenshot/InputSingleLine.png)
+![Input Example](./compiler/Screenshot/InputMultipleLine1.png)
+![Input Example](./compiler/Screenshot/InputMultipleLine2.png)
+
+---
+
+### 🔹 AST Visualization
+
+![AST Visualization](./compiler/Screenshot/OutputSingleLine.png)
+![AST Visualization](./compiler/Screenshot/OutputMultipleLine12.png)
+![AST Visualization](./compiler/Screenshot/OutputMultipleLine24.png)
+
+---
+
+### 🔹 Multiple Statements
+
+![Multiple Statements](./compiler/Screenshot/InputMultipleLine.png)
+![Multiple Statements](./compiler/Screenshot/InputMultipleLine1.png)
+![Multiple Statements](./compiler/Screenshot/InputMultipleLine2.png)
+![Multiple Statements](./compiler/Screenshot/OutputSingleLine.png)
+![Multiple Statements](./compiler/Screenshot/OutputMultipleLine11.png)
+![Multiple Statements](./compiler/Screenshot/OutputMultipleLine12.png)
+![Multiple Statements](./compiler/Screenshot/OutputMultipleLine21.png)
+![Multiple Statements](./compiler/Screenshot/OutputMultipleLine22.png)
+![Multiple Statements](./compiler/Screenshot/OutputMultipleLine23.png)
+![Multiple Statements](./compiler/Screenshot/OutputMultipleLine24.png)
+
+---
+
+## ✨ Features
+
+* 🧠 Custom **Lexer (Tokenizer)**
+* 🌳 Recursive Descent **Parser**
+* 🧩 AST (Abstract Syntax Tree) generation
+* ⚡ Expression evaluation engine
+* 🔄 Supports **multiple statements**
+* 📊 Interactive **AST visualization**
+* 🎨 Color-coded nodes for better understanding
+* 🌐 Full-stack integration using Next.js
 
 ---
 
@@ -161,16 +177,6 @@ http://localhost:3000
 * Flex-based tree layout (not algorithmic)
 * Deep expressions may not align perfectly
 * Limited error handling
-
----
-
-## 🚀 Future Improvements
-
-* Use D3.js for advanced tree layout
-* Add syntax error detection
-* Add variable memory visualization
-* Support more operators & functions
-* Deploy online
 
 ---
 

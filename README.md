@@ -63,8 +63,8 @@ It also demonstrates the ability to **bridge low-level C++ logic with a modern f
 ### 🔹 Multiple Statements
 
 <p align="center">
-  <a href="./compiler/Screenshot/InputMultipleLine.png">
-    <img src="./compiler/Screenshot/InputMultipleLine.png" width="100"/>
+  <a href="./compiler/Screenshot/InputSingleLine.png">
+    <img src="./compiler/Screenshot/InputSingleLine.png" width="100"/>
   </a>
   <a href="./compiler/Screenshot/InputMultipleLine1.png">
     <img src="./compiler/Screenshot/InputMultipleLine1.png" width="100"/>
